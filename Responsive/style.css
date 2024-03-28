@@ -1,0 +1,775 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+
+
+header{
+    position: fixed;
+    right: 0;
+    top: -2rem;
+    z-index: 1000;
+    width: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: left;
+    padding: 40px 9%;
+    background: transparent;
+    
+}
+
+
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    display: inline-block;
+    padding: 12px 30px;
+    z-index: 1;
+}
+.logomark{
+    margin-right: -2rem;
+}
+.navlist{
+    display: flex;
+    z-index: 1 ;
+
+
+}
+.navlist a{
+    margin-left: 20px;
+    font-size: 15px ;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    color: gray;
+}
+
+#menu-icon{
+    color: black;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 150vh;
+    justify-content: center;
+    position: relative;
+    display: grid;
+    margin-top: 5rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    /* gap: 2rem; */
+    /* background-image: white; */
+    /* margin-left: 7rem; */
+}
+section{
+    padding: 0 19%;
+    
+}
+.hero-text h1{
+    font-size: 40px;
+    line-height: 1;
+    color:black;
+    margin: 0 0 30px;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+.hero-text h5{
+    font-size: 10px;
+    line-height: 1;
+    color:green;
+    margin-bottom: 1rem;
+    border: 5px solid transparent;
+    text-align: center;
+    border-radius: 20rem;
+    background-color: #d7fff2fc;
+    font-weight: 300;
+    padding: 3px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+.hero-text h4{
+    font-size: 10px;
+    line-height: 1;
+    color:green;
+    margin-bottom: 1rem;
+    border: 5px solid transparent;
+    text-align: center;
+    font-weight: 300;
+    border-color: #d7fff2fc;
+    border-radius: 2rem;
+    padding: 3px 5px 3px 3px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.hero-text p{
+
+    text-align: center;
+}
+.hero-text a{
+    margin-top: 2rem;
+    display: inline-block;
+    justify-items: center;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    border-radius: 10px;
+
+}
+.hero-text a.ctaa{
+    background: white;
+    color: black;
+    border: 1px solid;
+    border-radius: 10px;
+    
+}
+
+.imagelogo{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.imagelogo img{
+    width: 100rem;
+}
+
+.center-text{
+    
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+
+.icon-container {
+    text-align: center; /* Center the content horizontally */
+    margin-bottom: -25rem;
+  }
+  
+  .icon-list {
+    display: flex; /* Use flexbox for responsive layout */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center the list items horizontally */
+    list-style: none; /* Remove default bullet points */
+    margin: 0 auto; /* Center the list horizontally within its container */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .icon-list li {
+    margin: 20px; /* Add space between list items */
+    text-align: center; /* Center the content within each list item */
+   
+  }
+  
+  .icon-list li a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Text color */
+
+  }
+  .icon-list .hide{
+    display: none;
+  }
+  .icon-container .icon-list img{
+    margin-bottom: -1rem;
+  }
+  .anotherhero{
+
+    min-height: 150vh;
+    justify-content: center;
+    margin-top: 2rem;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    text-align: center;
+    /* gap: 2rem; */
+    /* background-image: white; */
+    /* margin-left: 7rem; */
+}
+.anotherhero-text h4{
+    font-size: 15px;
+    line-height: 1;
+    color:green;
+    margin-bottom: 1rem;
+    border: 5px solid transparent;
+    text-align: center;
+    
+}
+.service {
+    width: 100vw;
+    text-align: center;
+    margin-top: -25rem;
+    justify-content: center;
+    
+}
+
+.service .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 5rem;
+}
+
+
+
+/* service heading & text  */
+.service .row .content {
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.service .row .content h2 {
+    font-size: 1rem;
+    color: var(--green);
+    margin-top: 2rem;
+}
+
+
+.service .row .content p {
+    font-size: 17px;
+    color: var(--black);
+    padding: 1rem -90rem;
+}
+.service .row .content i {
+color: green;
+background-color: #c7ffd0;
+border: 5px solid;
+border-color: #e3f8e6;
+padding: 15px;
+border-radius: 20rem;
+font-size: 25px;
+
+}
+    .anothersection{
+
+
+        justify-content: center;
+        margin-top: 5rem;
+        display: grid;
+
+        align-items: center;
+        text-align: center;
+
+    }
+    .anothersection-text h4{
+        font-size: 15px;
+        line-height: 1;
+        color:black;
+        margin-bottom: 1rem;
+        border: 5px solid transparent;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .anothersection img{
+
+        width: 1vw;
+        margin-right: 1vw;
+        align-items: center;
+    }
+
+    .candace{
+
+
+        justify-content: center;
+        display: grid;
+        margin-top: 2rem;
+        align-items: center;
+        text-align: center;
+
+    }
+    .candace .candacewu p{
+        font-size: 15px;
+        
+    }
+
+    .anotherforever{
+
+
+        justify-content: center;
+        margin-top: 5rem;
+        display:grid;
+
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .anotherforever-text h4{
+        font-size: 10px;
+        line-height: 1;
+        color:green;
+        margin-bottom: 1rem;
+        border: 9px solid transparent;
+        border-color: #d2ffda;
+        text-align: center;
+        background-color: #d2ffda ;
+        border-radius: 15rem;
+        display: inline-block;
+        
+
+        
+    }
+    .servicing {
+        width: 100vw;
+        text-align: center;
+        margin-top: -25rem;
+        justify-content: center;
+        margin-top: 2rem;
+        
+    }
+    
+    .servicing .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin-top: 5rem;
+    }
+    /* service heading & text  */
+.servicing .row .content {
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.servicing .row .content h2 {
+    font-size: 1rem;
+    color: var(--green);
+    margin-top: 2rem;
+}
+
+
+.servicing .row .content p {
+    font-size: 17px;
+    color: var(--black);
+    padding: 1rem -90rem;
+}
+.servicing .row .content i {
+color: green;
+background-color: #c7ffd0;
+border: 5px solid;
+border-color: #e3f8e6;
+padding: 15px;
+border-radius: 20rem;
+font-size: 25px;
+
+}
+.servicing .row .content .noedit a{
+color: green;
+}
+.servicing .row .content .noedit i{
+    border: none;
+    background-color: white;
+    border-radius: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.anothernapod{
+
+
+    justify-content: center;
+    margin-top: 5rem;
+    display:grid;
+    margin-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.thequestions .row {
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin-top: 5rem;
+}
+.thequestions .content i{
+    border: 2px solid;
+    padding: 4px;
+    border-radius: 20rem;
+    border-color: green;
+    color: green;
+}
+
+.stillhavequestions{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.stillhavequestions .stillhavequestionss a{
+    border: 1px solid;
+    border-color: green;
+    padding: 9px;
+    background-color: green;
+    color: white;
+    border-radius: 10px ;
+}
+
+.anotherherohero{
+
+    min-height: 30vh;
+    justify-content: left;
+    margin-top: 2rem;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    
+    text-align: left;
+    /* gap: 2rem; */
+    /* background-image: white; */
+    /* margin-left: 7rem; */
+}
+.anotherherohero-text h4{
+    font-size: 15px;
+    line-height: 1;
+    color:green;
+    margin-bottom: 1rem;
+    border: 5px solid transparent;
+    text-align: left;
+}
+
+.last{
+    width: 100vw;
+    text-align: center;
+    
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0 100px;
+}
+.last .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 5rem;
+}
+.last .row .content h2{
+    color: #4d9559;
+    font-size: 30px;
+}
+.contento{
+    margin-bottom: -15rem;
+}
+.contentimage{
+    margin-top: -28rem;
+}
+.last .row .content h1{
+    font-size: 20px;
+}
+.lasthero{
+
+    width: 100%;
+    min-height: 80vh;
+    justify-content: center;
+    position: relative;
+    display: grid;
+    text-align: center;
+    /* grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    /* gap: 2rem; */
+    /* background-image: white; */
+    /* margin-left: 7rem; */
+}
+.lasthero-text a{
+    margin-top: 2rem;
+    display: inline-block;
+    justify-items: center;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    border-radius: 10px;
+
+}
+.lasthero-text a.ctaa{
+    background: white;
+    color: black;
+    border: 1px solid;
+    border-radius: 10px;
+    
+}
+.container >div {
+    width: 50%;
+    padding: 30px;
+    margin: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container p{
+    color: gray;
+}
+.container li{
+    color: rgb(68, 68, 68);
+}
+.container i{
+    color:#4d9559;
+}
+
+.foot {
+    width: 100vw;
+
+    margin-top: 2rem;
+    
+}
+
+.foot .row {
+    display: flex;
+
+    padding: 0;
+    margin-top: 5rem;
+    gap:30rem;
+}
+/* service heading & text  */
+.foot .row .content {
+
+border-radius: 1rem;
+}
+.foot .row .content .logomarkk {
+    margin-bottom: -10px;
+    margin-right: -2rem;
+    }
+    .foot .row .content p{
+        color: lightgray;
+        }
+
+
+@media (max-width: 412px) {
+    header{
+        padding: 50px 0 0 0px;
+        justify-content: left;
+        transition: .2s;
+    }
+    .hero{
+        padding: 10px 10px 0 10px;
+        margin-top: 1rem;
+        transition: .2s;
+    }
+    .hero-text a{
+        margin-top: -1rem ;
+        display: flex;
+        
+    }
+    .hero-text a.ctaa{
+        position: relative;
+        bottom: -5.7rem;
+        display: flex;
+        
+    }
+    .imagelogo{
+        padding: 15px;
+        height: 300px;
+        width: 300px;
+        margin-left: 2.5rem;
+        
+    }
+    #menu-icon{
+        display: block;
+        margin-left: 13rem;
+        justify-items: center;
+        transition: .2s;
+        
+    }
+    .navlist{
+        
+        display: none;
+    }
+    .navlistt{
+        
+        display: grid;
+    }
+    .navlistt a{
+        margin-left: 10rem;
+        font-size: 20px ;
+        font-weight: 400;
+        border-bottom: 2px solid transparent;
+        transition: all .55s ease;
+        color: black;
+    }
+    .anotherhero{
+        padding: 10px 10px 0 10px;
+        transition: .2s;
+    }
+    .anotherhero-text h4{
+        font-size: 1rem;
+        transition: .2s;
+    }
+    .anothersection{
+        padding: 10px 10px 0 10px;
+        transition: .2s;
+    }
+    .anothersection-text h4{
+        font-size: 1rem;
+        transition: .2s;
+    }
+    .anothersection img{
+
+        width: 3vw;
+        margin-right: 1vw;
+        align-items: center;
+    }
+    .icon-container{
+        margin-bottom: -20rem;;
+        justify-content: center;
+        padding: 0px 40px;
+    }
+    .icon-container .hide{
+       display: block;
+    }
+    .service{
+        margin-top: -20rem;
+        padding: 0;
+    }
+    .service .row {
+        flex-flow: column;
+        padding: 0 2rem;
+    }
+
+    .service .row:nth-child(even) {
+        flex-flow: column-reverse;
+    }
+
+    .service .row .content {
+        flex-flow: column;
+        padding: 20px 0px;
+
+    }
+
+    .service .row .content p {
+        font-size: 1rem;
+        color: var(--black);
+        padding: 1rem -90rem;
+    }
+    .anotherforever{
+        padding: 10px 10px 0 10px;
+        transition: .2s;
+    }
+    .anotherforever-text h4{
+        font-size: 1rem;
+        transition: .2s;
+    }
+    .anotherforever img{
+        padding: 15px;
+        height: 300px;
+        width: 300px;
+        margin-left: 2.5rem;
+        
+    }
+    
+    .servicing{
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .servicing .row {
+        flex-flow: column;
+        padding: 0 2rem;
+    }
+
+    .servicing .row:nth-child(even) {
+        flex-flow: column-reverse;
+    }
+
+    .servicing .row .content {
+        flex-flow: column;
+        padding: 20px 0px;
+    }
+    .anothernapod{
+        padding: 10% 5px 0 5px;
+    }
+
+    .thequestions{
+        margin-left: -3rem;
+    }
+
+    .thequestions .row {
+        margin-top: 1rem;
+        padding: 10% 5px 0 5px;
+    }
+    .anotherherohero{
+        padding: 10px 10px 10px 10px;
+        transition: .2s;
+    }
+    .last{
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .last .row {
+        flex-flow: column;
+        padding: 0 2rem;
+    }
+
+    .last .row:nth-child(even) {
+        flex-flow: column;
+    }
+
+    .last .row .content {
+        flex-flow: column;
+        padding: 20px 0px;
+    }
+    .last .row .content {
+        flex-flow: column;
+        padding: 20px 0px;
+    }
+    .contento{
+        display: none;
+    }
+    .contentimage{
+        margin-top: 0;
+    }
+    .lasthero-text a{
+        margin-top: -1rem ;
+        display: flex;
+        
+    }
+    .lasthero-text a.ctaa{
+        position: relative;
+        bottom: -5.7rem;
+        display: flex;
+        
+    }
+    .container {
+        flex-flow:column;
+    }
+    .foot{
+        margin-left: -3.5rem;
+        padding-bottom: 30px;
+    }
+    .foot .row{
+        flex-flow: column;
+        gap: 0;
+    }
+    .foot .row .content{
+        flex-flow: column;
+    }
+
+}
+
+
+
+
